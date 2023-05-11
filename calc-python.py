@@ -1,8 +1,7 @@
 print("Calculadora Python")
 
-operation = input("Digite a operação que deseja realizar ('+', '-' ou '*'): ")
-
-if(operation != "+" or operation != "-" or operation != "*"):
+operation = input("Digite a operação que deseja realizar ('+', '-', '*' ou '/'): ")
+if(operation != "+" and operation != "-" and operation != "*" and operation != '/'):
     print("Operação Inválida, digite um operador válido.")
 else: 
     try:
@@ -15,5 +14,7 @@ else:
             print(f"{number1}-{number2}={number1 - number2}")
         elif operation == "*":
             print(f"{number1}*{number2}={number1 * number2}")
+        elif operation == "/":
+            print(f"{number1}/{number2}={number1 / number2}")
     except:
         print("Número inválido")
